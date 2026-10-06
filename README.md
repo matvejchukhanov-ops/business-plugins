@@ -39,6 +39,12 @@
 
 Плагины начинают работать с нового чата. Обновления набора — командой `/plugin marketplace update business-plugins`.
 
+Если на Windows установка падает с ошибкой `Filename too long`, разрешите Git длинные пути и повторите:
+
+```
+git config --global core.longpaths true
+```
+
 ### Вариант 2. Приложение Claude или claude.ai (чат, Cowork)
 
 1. Откройте страницу **[Releases](https://github.com/matvejchukhanov-ops/business-plugins/releases)** и скачайте архивы нужных плагинов (`idea-council.zip`, `small-business.zip` и т. д.).
