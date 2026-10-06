@@ -133,6 +133,29 @@ def build():
         (agents_dir / f"{name}.md").write_text(text, encoding="utf-8")
     (agents_dir / "critic.md").write_text(CRITIC, encoding="utf-8")
     print("Собрано агентов:", len(AGENTS) + 1)
+    embed_methods()
+
+
+SKILL = ROOT / "skills" / "idea-council" / "SKILL.md"
+BEGIN, END = "<!-- methods:begin -->", "<!-- methods:end -->"
+
+
+def embed_methods():
+    """Копирует методы в SKILL.md: в чате claude.ai агенты плагина не загружаются."""
+    parts = [BEGIN, "", "## Методы участников (для режима без агентов)", ""]
+    for name, (_, _, body) in AGENTS.items():
+        parts += [f"### `{name}`", "", body.replace("## ", "#### "), ""]
+    critic_body = CRITIC.split("---", 2)[2].strip()
+    parts += ["### `critic`", "", critic_body.replace("## ", "#### "), ""]
+    parts += ["### Общие правила и формат ответа мыслителя", "", RULES.replace("## ", "#### ").strip(), "", END]
+    text = SKILL.read_text(encoding="utf-8")
+    block = "\n".join(parts)
+    if BEGIN in text:
+        text = text[: text.index(BEGIN)] + block + text[text.index(END) + len(END):]
+    else:
+        text = text.rstrip() + "\n\n" + block + "\n"
+    SKILL.write_text(text, encoding="utf-8")
+    print("Методы встроены в SKILL.md")
 
 if __name__ == "__main__":
     build()

@@ -10,7 +10,7 @@
     {
       "name": "idea-council",
       "description": "Совет из шести агентов с разными методами мышления: отвечает на запрос несколькими нестандартными решениями, отсеивая банальные",
-      "version": "0.2.0",
+      "version": "0.3.0",
       "source": "./plugins/idea-council",
       "category": "productivity"
     },
