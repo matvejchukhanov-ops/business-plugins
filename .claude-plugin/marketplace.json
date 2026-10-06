@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "business-plugins",
+  "version": "0.1.0",
+  "description": "Свои плагины для ведения бизнеса",
+  "owner": {
+    "name": "Matvej Chukhanov"
+  },
+  "plugins": [
+    {
+      "name": "idea-council",
+      "description": "Совет из шести агентов с разными методами мышления: отвечает на запрос несколькими нестандартными решениями, отсеивая банальные",
+      "version": "0.2.0",
+      "source": "./plugins/idea-council",
+      "category": "productivity"
+    },
+    {
+      "name": "small-business",
+      "description": "Pre-built small business workflows to help you run and grow your business. Supports a majority of the tools you already use. You approve every step that touches money or customers. Install and then ask Claude to help you get onboarded.",
+      "version": "1.35.1",
+      "source": "./plugins/small-business",
+      "category": "business",
+      "author": {
+        "name": "Anthropic"
+      },
+      "homepage": "https://github.com/anthropics/knowledge-work-plugins/tree/main/small-business"
+    },
+    {
+      "name": "sales",
+      "description": "Sales skills that work with the tools your team already uses - your CRM, email, calendar, chat and call recorder - or with uploaded files. Prep calls, summarize and follow up, research accounts, review deals and pipeline, and write the forecast. When you ask, it can update CRM records, create email drafts or send email, post to chat and book meetings through your connected tools.",
+      "version": "2.0.1",
+      "source": "./plugins/sales",
+      "category": "business",
+      "author": {
+        "name": "Anthropic"
+      },
+      "homepage": "https://github.com/anthropics/knowledge-work-plugins/tree/main/sales"
+    },
+    {
+      "name": "marketing",
+      "description": "Create content, plan campaigns, and analyze performance across marketing channels. Maintain brand voice consistency, track competitors, and report on what's working.",
+      "version": "1.2.0",
+      "source": "./plugins/marketing",
+      "category": "marketing",
+      "author": {
+        "name": "Anthropic"
+      },
+      "homepage": "https://github.com/anthropics/knowledge-work-plugins/tree/main/marketing"
+    },
+    {
+      "name": "brand-voice",
+      "description": "Brand Voice transforms scattered brand materials into enforceable AI guardrails — automatically. It searches across Notion, Google Drive, Confluence, Gong, Slack, and meeting transcripts to distill your strongest brand signals into a single source of truth, then applies them to every piece of AI-generated content. The more your team creates with Claude, the more consistent your brand becomes.",
+      "version": "1.1.0",
+      "source": "./plugins/brand-voice",
+      "category": "marketing",
+      "author": {
+        "name": "Anthropic"
+      },
+      "homepage": "https://github.com/anthropics/knowledge-work-plugins/tree/main/brand-voice"
+    },
+    {
+      "name": "finance",
+      "description": "Streamline finance and accounting workflows, from journal entries and reconciliation to financial statements and variance analysis. Speed up audit prep, month-end close, and keeping your books clean.",
+      "version": "1.3.0",
+      "source": "./plugins/finance",
+      "category": "finance",
+      "author": {
+        "name": "Anthropic"
+      },
+      "homepage": "https://github.com/anthropics/knowledge-work-plugins/tree/main/finance"
+    },
+    {
+      "name": "legal",
+      "description": "Speed up contract review, NDA triage, and compliance workflows for in-house legal teams. Draft legal briefs, organize precedent research, and manage institutional knowledge.",
+      "version": "1.3.0",
+      "source": "./plugins/legal",
+      "category": "legal",
+      "author": {
+        "name": "Anthropic"
+      },
+      "homepage": "https://github.com/anthropics/knowledge-work-plugins/tree/main/legal"
+    },
+    {
+      "name": "product-management",
+      "description": "Write feature specs, plan roadmaps, and synthesize user research faster. Keep stakeholders updated and stay ahead of the competitive landscape.",
+      "version": "1.2.0",
+      "source": "./plugins/product-management",
+      "category": "product",
+      "author": {
+        "name": "Anthropic"
+      },
+      "homepage": "https://github.com/anthropics/knowledge-work-plugins/tree/main/product-management"
+    },
+    {
+      "name": "design",
+      "description": "Accelerate design workflows — critique, design system management, UX writing, accessibility audits, research synthesis, and dev handoff. From exploration to pixel-perfect specs.",
+      "version": "1.2.0",
+      "source": "./plugins/design",
+      "category": "design",
+      "author": {
+        "name": "Anthropic"
+      },
+      "homepage": "https://github.com/anthropics/knowledge-work-plugins/tree/main/design"
+    },
+    {
+      "name": "productivity",
+      "description": "Manage tasks, plan your day, and build up memory of important context about your work. Syncs with your calendar, email, and chat to keep everything organized and on track.",
+      "version": "1.3.1",
+      "source": "./plugins/productivity",
+      "category": "productivity",
+      "author": {
+        "name": "Anthropic"
+      },
+      "homepage": "https://github.com/anthropics/knowledge-work-plugins/tree/main/productivity"
+    },
+    {
+      "name": "enterprise-search",
+      "description": "Search across all of your company's tools in one place. Find anything across email, chat, documents, and wikis without switching between apps.",
+      "version": "1.3.0",
+      "source": "./plugins/enterprise-search",
+      "category": "productivity",
+      "author": {
+        "name": "Anthropic"
+      },
+      "homepage": "https://github.com/anthropics/knowledge-work-plugins/tree/main/enterprise-search"
+    }
+  ]
+}
